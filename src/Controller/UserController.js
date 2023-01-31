@@ -61,7 +61,7 @@ class UserController {
                 throw new AppError('Senha antiga não confere');
             }
 
-            user.password = await hash(password, 8)
+            user.password = await hash(password, 8);
         }
 
         user.name = name ?? user.name;
